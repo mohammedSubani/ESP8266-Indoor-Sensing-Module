@@ -1,9 +1,8 @@
 /**
-Project: BEMS IoT Enabled System V 1.0.0
 File Name: DataAcquisition.ino
 Development Environment: Arduino IDE 1.8.19
 Code contributors: Mohammed Ahmed Subani
-ASU ID: 1218278997
+
 
 
 File Description:
@@ -14,13 +13,13 @@ and broadcast the readings in JSON format to an assigned local access point
 */
 
 /*Libraries*/
-#include <ESP8266WiFi.h>  		// Provides WiFi basic functionality
+#include <ESP8266WiFi.h>  	// Provides WiFi basic functionality
 #include <ESP8266WebServer.h> 	// For setting up response to the assigned IP address
-#include <Wire.h>				// Allow I2C (Inter-Integrated Circuit, eye-squared-C) communication
+#include <Wire.h>		// Allow I2C (Inter-Integrated Circuit, eye-squared-C) communication
 #include <Adafruit_Sensor.h>	// General library for Adafruit sensors
 #include <Adafruit_TSL2561_U.h> // Library for light intensity sensing functionality
 #include "Adafruit_SGP30.h" 	// Library for CO2 sensing functionality
-#include "DHT.h"				// Temp. and humidity sensing functionality
+#include "DHT.h"		// Temp. and humidity sensing functionality
 
 /*DHT sensor type definition*/
 #define DHTTYPE DHT22
